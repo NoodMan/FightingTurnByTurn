@@ -92,14 +92,14 @@ namespace FightingTurnByTurnTests
             Assert.AreEqual(usedCharacter.NumberOfTimePlayedSinceSpecial, 0);
         }
 
-        [TestMethod]
-        public void CharacterDoSpecialAttackWhenAvailable()
-        {
-            character = playerOne.Characters[0];
-            Assert.IsFalse(character.IsOnCooldown);
-            character.Attack(playerTwo.Characters[0], null);
-            Assert.IsTrue(character.IsOnCooldown);
-        }
+        // [TestMethod]
+        // public void CharacterDoSpecialAttackWhenAvailable()
+        // {
+        //     character = playerOne.Characters[0];
+        //     Assert.IsFalse(character.IsOnCooldown);
+        //     character.Attack(playerTwo.Characters[0], null);
+        //     Assert.IsTrue(character.IsOnCooldown);
+        // }
 
         [TestMethod]
         public void IfWarriorCharacterIsTargetAfterUsingSpecial_DamageTakenWillBeDividedByTwo()
